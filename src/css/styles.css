@@ -1,0 +1,177 @@
+/* Reset de estilos para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do cabeçalho */
+#header {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 32px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header .title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#header img {
+    width: 36px;
+    height: 36px;
+}
+
+/* Estilos da caixa de pesquisa */
+div.search {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+div.search input[type="search"] {
+    flex-grow: 1;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    outline: 0;
+}
+
+#header div.search img {
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para o hover da imagem de pesquisa */
+div.search img:hover {
+    opacity: 0.7;
+}
+
+/* Estilos do conteúdo principal */
+#main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos da lista de Pokémons */
+.pokemons {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 998px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.pokemons li {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.144);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 260px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pokemons li:hover {
+    transform: translateY(-4px);
+}
+
+.pokemons li p {
+    color: #fff;
+    font-weight: bold;
+    background-color: #0056a9;
+    display: inline;
+    padding: 4px 24px;
+    border-radius: 12px;
+}
+
+.pokemons li img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 12px;
+}
+
+/* Estilos para o botão "Carregar Mais" */
+#loadMore {
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#loadMore:hover {
+    background-color: #0056a9;
+}
+
+/* Estilos para dispositivos menores */
+@media (max-width: 768px) {
+    /* Estilos do cabeçalho */
+    #header {
+        flex-direction: column;
+        padding: 8px;
+        justify-content: center;
+    }
+    #header .title {
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 498px) {
+    .pokemons li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        position: relative;
+    }
+
+    .pokemons li p {
+        padding: 4px 8px;
+        border-radius: 100%;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+
+    .pokemons li img {
+        width: 50%;
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 340px) {
+    .pokemons li p {
+        position: relative;
+        display: none;
+    }
+
+    .pokemons li img {
+        width: 40%;
+        margin-right: 4px;
+    }
+}
