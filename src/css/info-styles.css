@@ -1,0 +1,148 @@
+main {
+    height: 100vh;
+}
+
+div {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    top: 16px;
+    left: 16px;
+    transition: ease-in-out 0.3s;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background-color: #333333;
+    font-weight: 600;
+}
+
+a:hover {
+    background-color: #333333de;
+}
+
+/* Estilos do contêiner da descrição do Pokémon */
+.pokemon-description {
+    padding: 0 0 16px 0;
+    margin-top: 32px;
+    background-color: #fff;
+    margin: 16px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+/* Estilos da imagem do Pokémon */
+/* Estilo para a seção de informações do Pokémon */
+
+.pokemon-description img {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.pokemon-description div {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    flex: 1;
+    border-radius: 0 0 20% 20%;
+    overflow: hidden;
+}
+
+/* Estilo para o nome do Pokémon */
+.name {
+    display: inline;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(253, 253, 253);
+    margin-bottom: 8px;
+    background-color: #3333333b;
+}
+
+/* Estilo para as informações gerais */
+.tag-p {
+    font-size: 16px;
+    margin: 8px 0;
+    font-weight: 600;
+    padding: 4px 8px;
+    max-width: 320px;
+    color: #333333;
+}
+
+/* Estilos para tipos específicos de Pokémon */
+
+.normal {
+    background-color: #aaa67f;
+}
+
+.fire {
+    background-color: #f57c31;
+}
+
+.water {
+    background-color: #6493eb; 
+}
+
+.electric {
+    background-color: #f9cf30; 
+}
+
+.grass {
+    background-color: #74cb48;
+}
+
+.ice {
+    background-color: #98d8d8;
+}
+
+.fighting {
+    background-color: #c03028;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.ground {
+    background-color: #e0c068;
+}
+
+.flying {
+    background-color: #a890f0;
+}
+
+.psychic {
+    background-color: #f85888;
+}
+
+.bug {
+    background-color: #a8b820;
+}
+
+.rock {
+    background-color: #b8a038;
+}
+
+.ghost {
+    background-color: #705898;
+}
+
+.dragon {
+    background-color: #7038f8;
+}
+
+.dark {
+    background-color: #705848;
+}
+
+.steel {
+    background-color: #b8b8d0;
+}
+
+.fairy {
+    background-color: #ee99ac;
+}
