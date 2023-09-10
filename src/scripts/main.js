@@ -15,7 +15,7 @@ async function addPokemon() {
                 pokemon.sprites.other["official-artwork"].front_default;
 
             const createPokemon = `
-                <a href="../../pages/info.html?id=${pokemon.id}">
+                <a href="info.html?id=${pokemon.id}">
                     <li>
                         <p>${pokemon.id}</p>
                         <img src="${officialArtworkUrl}" alt="${pokemon.name}">
