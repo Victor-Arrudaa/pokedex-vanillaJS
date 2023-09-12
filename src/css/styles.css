@@ -93,7 +93,7 @@ div.search img:hover {
 }
 
 .pokemons li:hover {
-    transform: translateY(-4px);
+    transform: scale(1.05);
 }
 
 .pokemons li p {
@@ -109,6 +109,11 @@ div.search img:hover {
     max-width: 100%;
     height: auto;
     margin-top: 12px;
+}
+
+.pokemons a {
+    text-decoration: none;
+    color: #333;
 }
 
 /* Estilos para o botão "Carregar Mais" */

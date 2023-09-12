@@ -84,3 +84,5 @@ getPokemonInfo(pokemonId).then((pokemonInfo) => {
         console.error("Os dados do Pokémon não puderam ser obtidos.");
     }
 });
+
+export { getPokemonInfo };
