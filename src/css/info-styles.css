@@ -40,16 +40,19 @@ a:hover {
 /* Estilo para a seção de informações do Pokémon */
 
 .pokemon-description img {
-    max-width: 80%;
+    max-width: 70%;
     margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 12px;
+    margin-bottom: 12px;
 }
 
 .pokemon-description div {
     display: flex;
-    gap: 16px;
+    gap: 8px;
     flex-direction: column;
-    flex: 1;
-    border-radius: 0 0 20% 20%;
+    padding-top: 8px;
     overflow: hidden;
 }
 
@@ -59,18 +62,22 @@ a:hover {
     font-size: 24px;
     font-weight: bold;
     color: rgb(253, 253, 253);
-    margin-bottom: 8px;
-    background-color: #3333333b;
+    text-transform: uppercase;
+}
+
+.pokemon-description div.informations {
+    margin-top: 8px;
+    
 }
 
 /* Estilo para as informações gerais */
 .tag-p {
     font-size: 16px;
-    margin: 8px 0;
     font-weight: 600;
     padding: 4px 8px;
-    max-width: 320px;
     color: #333333;
+    text-align: left;
+    margin-left: 24px;
 }
 
 /* Estilos para tipos específicos de Pokémon */

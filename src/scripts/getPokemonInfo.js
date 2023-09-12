@@ -65,13 +65,15 @@ getPokemonInfo(pokemonId).then((pokemonInfo) => {
         // Atualize a página com as informações do Pokémon
         description.innerHTML += `
             <div class="pokemon">
+            <h4 class = 'name'>${pokemonInfo.name}</h4>
                 <img src="${pokemonInfo.image}"/>
-                <h4 class = 'name'>${pokemonInfo.name}</h4>
             </div>
-            <p class='tag-p'>Type: ${pokemonInfo.type}</p>
-            <p class='tag-p'>Height: ${pokemonInfo.height}</p>
-            <p class='tag-p'>Weight: ${pokemonInfo.weight}</p>
-            <p class='tag-p'>Abilities: ${pokemonInfo.abilities}</p>
+            <div class='informations'>
+                <p class='tag-p'><i class="fa-solid fa-shield-dog"></i> Type: ${pokemonInfo.type}</p>
+                <p class='tag-p'><i class="fa-solid fa-ruler"></i> Height: ${pokemonInfo.height}</p>
+                <p class='tag-p'><i class="fa-solid fa-weight-hanging"></i> Weight: ${pokemonInfo.weight}</p>
+                <p class='tag-p'><i class="fa-solid fa-fire"></i> Abilities: ${pokemonInfo.abilities}</p>
+            </div>
             `;
         // document.getElementById(
         //     "pokemonDescription"
